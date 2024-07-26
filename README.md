@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+Budget Planner
+Overview
+Budget Planner is a web application designed to help users manage their expenses and plan their budget effectively. The application allows users to add, view, and manage expenses, with features including real-time currency conversion and data persistence using local storage. The app provides an intuitive and responsive interface for tracking and organizing your financial information.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Expense Tracking: Add and manage expenses with categories and amounts.
+Real-Time Currency Conversion: Convert amounts based on real-time currency exchange rates.
+Data Persistence: Save user data using local storage for persistent access.
+Responsive Design: Ensure the app is usable across various devices and screen sizes.
+Technologies Used
+Frontend: ReactJS, TypeScript (for type safety), and CSS
+Backend: None (client-side application)
+API Integration: Currency conversion via external API
 
-## Available Scripts
+Getting Started
+To get started with the Budget Planner, follow these steps:
 
-In the project directory, you can run:
+Clone the Repository:
+git clone https://github.com/shanku01/BudgetPlanner.git
+cd BudgetPlanner
 
-### `npm start`
+Install Dependencies:
+Ensure you have Node.js installed, then run:
+npm install
+Run the Application:
+Start the development server with:
+npm start
+The application will be accessible at http://localhost:3000.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Build for Production:
+To create a production build, run:
+npm run build
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Features in Detail
+Add Expense: Users can input expense details including the name, amount, and category.
+Expense List: View a list of added expenses with the ability to remove or edit them.
+Currency Selector: Choose your preferred currency for conversion and track expenses accordingly.
+Error Handling: Display error messages for invalid inputs or API failures.
 
-### `npm test`
+Project Structure
+The project is organized as follows:
+src/
+│
+├── components/
+│   ├── ExpenseForm.tsx
+│   ├── ExpenseList.tsx
+│   └── CurrencySelector.tsx
+│
+├── services/
+│   └── currencyService.ts
+│
+├── types/
+│   ├── expense.d.ts
+│   ├── currency.d.ts
+│   └── api.d.ts
+│
+└── App.tsx
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Contributing
+Contributions to the Budget Planner project are welcome! If you have suggestions or improvements, please open an issue or submit a pull request.
 
-### `npm run build`
+Fork the Repository
+Create a New Branch:
+git checkout -b feature/your-feature
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Commit Your Changes:
+git commit -am 'Add new feature'
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Push to the Branch:
+git push origin feature/your-feature
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contact
+For any questions or feedback, please reach out to Shashank Pradhan.
